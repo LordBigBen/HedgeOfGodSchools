@@ -38,6 +38,11 @@
   padding: 5rem 1rem;
 }
 
+.section__containerPri1 {
+  margin-top: 4rem;
+  place-items: center;
+}
+
 .section__header {
   margin-bottom: 1rem;
   font-size: 2rem;
@@ -648,4 +653,114 @@ nav {
   100% {
     transform: rotate(0deg);
   }
+}
+
+.section__headerx {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.section__containerPri {
+  place-self: center;
+  align-self: center;
+  justify-self: center;
+  margin: 10px;
+  margin-top: 20px;
+}
+.section__containerPri div img {
+  margin-top: 5px;
+  border-radius: 50px;
+}
+
+.section__containerPri div img:active {
+  width: 50%;
+  align-self: center;
+  place-self: center;
+}
+
+.section__containerPri div {
+  height: 300px;
+  max-height: 300px;
+  overflow-x: auto;
+  margin-right: 10px;
+}
+
+.containersDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  place-content: center;
+  text-align: center;
+}
+
+.olddaysImgDiv {
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 0px;
+}
+
+.OldDayCont {
+  margin-bottom: 20px;
+}
+
+.OldDayCont sub {
+  color: rgba(255, 255, 255, 0.621);
+  font-size: x-small;
+  align-self: center;
+  font-weight: bold;
+}
+
+.olddaysImgDiv img {
+  margin-top: 10px;
+  width: 50%;
+  margin-right: 5px;
+  border-radius: 10px 40px 20px 30px;
+}
+
+.olddaysImgDiv img:hover {
+  width: 100%;
+}
+
+/* Graduation */
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 200px; /* adjust to your image height */
+}
+
+.slider h3 {
+  margin-bottom: 10px;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(200px * 10); /* image width × total images */
+  animation: scroll 30s linear infinite; /* speed control */
+}
+
+.slide-track img {
+  width: 200px; /* your image width */
+  height: 200px; /* your image height */
+  object-fit: cover; /* keep nice ratio */
+  margin-right: 5px;
+  border-radius: 10px 0px 30px 10px;
+}
+
+.slide-track img:hover {
+  width: 50%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slider:hover .slide-track {
+  animation-play-state: paused;
 }
