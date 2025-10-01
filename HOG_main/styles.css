@@ -795,7 +795,7 @@ nav {
   animation: popupZoom 1.5s ease forwards;
   transform: scale(0);
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* Close button */
