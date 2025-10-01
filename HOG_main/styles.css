@@ -769,11 +769,11 @@ nav {
 /* Popup background */
 .popup {
   position: fixed;
-  top: 10%;
+  top: 0;
   left: 0;
   width: 100%;
   max-height: 100%;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   display: none;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(6px);
@@ -781,6 +781,8 @@ nav {
   align-items: center;
   z-index: 9999;
   animation: fadeIn 1.5s ease;
+  place-self: center;
+  align-self: center;
 }
 
 /* Popup box */
