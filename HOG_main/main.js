@@ -1,3 +1,20 @@
+// popup
+
+const today = new Date();
+const popup = document.getElementById("popup");
+const closeBtn = document.querySelector(".close-btn");
+console.log(popup);
+
+// Check if it's 1 Oct 2025
+if (true) {
+  popup.style.display = "flex";
+}
+
+// Close button handler
+closeBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
 const navLinks = document.getElementById("nav-links");
 const menuBtn = document.getElementById("menu-btn");
 const menuBtnIcon = menuBtn.querySelector("i");
