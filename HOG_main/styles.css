@@ -769,7 +769,7 @@ nav {
 /* Popup background */
 .popup {
   position: fixed;
-  top: 10%;
+  top: 5%;
   left: 0;
   width: 100%;
   height: 100%; /* full screen */
