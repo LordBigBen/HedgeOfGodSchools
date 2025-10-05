@@ -6,7 +6,9 @@ const closeBtn = document.querySelector(".close-btn");
 console.log(popup);
 
 // Check if it's 1 Oct 2025
-if (true) {
+if ( today.getDate() === 1 &&
+  today.getMonth() === 9 &&
+  today.getFullYear() === 2026) {
   popup.style.display = "flex";
 }
 
